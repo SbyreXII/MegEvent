@@ -14,6 +14,7 @@
 		7EAF083D29476D260091C027 /* MegEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF083C29476D260091C027 /* MegEventTests.swift */; };
 		7EAF084729476D260091C027 /* MegEventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF084629476D260091C027 /* MegEventUITests.swift */; };
 		7EAF084929476D260091C027 /* MegEventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF084829476D260091C027 /* MegEventUITestsLaunchTests.swift */; };
+		7EAF0856294783350091C027 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF0855294783350091C027 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7EAF084229476D260091C027 /* MegEventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegEventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF084629476D260091C027 /* MegEventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventUITests.swift; sourceTree = "<group>"; };
 		7EAF084829476D260091C027 /* MegEventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EAF0855294783350091C027 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				7EAF082B29476D1F0091C027 /* MegEventApp.swift */,
 				7EAF082D29476D1F0091C027 /* ContentView.swift */,
+				7EAF0855294783350091C027 /* DetailView.swift */,
 				7EAF082F29476D260091C027 /* Assets.xcassets */,
 				7EAF083129476D260091C027 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EAF082E29476D1F0091C027 /* ContentView.swift in Sources */,
+				7EAF0856294783350091C027 /* DetailView.swift in Sources */,
 				7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
