@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF082B29476D1F0091C027 /* MegEventApp.swift */; };
+		7EAF082E29476D1F0091C027 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF082D29476D1F0091C027 /* ContentView.swift */; };
+		7EAF083029476D260091C027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF082F29476D260091C027 /* Assets.xcassets */; };
+		7EAF083329476D260091C027 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF083229476D260091C027 /* Preview Assets.xcassets */; };
+		7EAF083D29476D260091C027 /* MegEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF083C29476D260091C027 /* MegEventTests.swift */; };
+		7EAF084729476D260091C027 /* MegEventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF084629476D260091C027 /* MegEventUITests.swift */; };
+		7EAF084929476D260091C027 /* MegEventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF084829476D260091C027 /* MegEventUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EAF083929476D260091C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAF082029476D1F0091C027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAF082729476D1F0091C027;
+			remoteInfo = MegEvent;
+		};
+		7EAF084329476D260091C027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAF082029476D1F0091C027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAF082729476D1F0091C027;
+			remoteInfo = MegEvent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EAF082829476D1F0091C027 /* MegEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAF082B29476D1F0091C027 /* MegEventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventApp.swift; sourceTree = "<group>"; };
+		7EAF082D29476D1F0091C027 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EAF082F29476D260091C027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EAF083229476D260091C027 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EAF083829476D260091C027 /* MegEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAF083C29476D260091C027 /* MegEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventTests.swift; sourceTree = "<group>"; };
+		7EAF084229476D260091C027 /* MegEventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegEventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAF084629476D260091C027 /* MegEventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventUITests.swift; sourceTree = "<group>"; };
+		7EAF084829476D260091C027 /* MegEventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EAF082529476D1F0091C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF083529476D260091C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF083F29476D260091C027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EAF081F29476D1F0091C027 = {
+			isa = PBXGroup;
+			children = (
+				7EAF082A29476D1F0091C027 /* MegEvent */,
+				7EAF083B29476D260091C027 /* MegEventTests */,
+				7EAF084529476D260091C027 /* MegEventUITests */,
+				7EAF082929476D1F0091C027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EAF082929476D1F0091C027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF082829476D1F0091C027 /* MegEvent.app */,
+				7EAF083829476D260091C027 /* MegEventTests.xctest */,
+				7EAF084229476D260091C027 /* MegEventUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EAF082A29476D1F0091C027 /* MegEvent */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF082B29476D1F0091C027 /* MegEventApp.swift */,
+				7EAF082D29476D1F0091C027 /* ContentView.swift */,
+				7EAF082F29476D260091C027 /* Assets.xcassets */,
+				7EAF083129476D260091C027 /* Preview Content */,
+			);
+			path = MegEvent;
+			sourceTree = "<group>";
+		};
+		7EAF083129476D260091C027 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF083229476D260091C027 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EAF083B29476D260091C027 /* MegEventTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF083C29476D260091C027 /* MegEventTests.swift */,
+			);
+			path = MegEventTests;
+			sourceTree = "<group>";
+		};
+		7EAF084529476D260091C027 /* MegEventUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF084629476D260091C027 /* MegEventUITests.swift */,
+				7EAF084829476D260091C027 /* MegEventUITestsLaunchTests.swift */,
+			);
+			path = MegEventUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EAF082729476D1F0091C027 /* MegEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAF084C29476D260091C027 /* Build configuration list for PBXNativeTarget "MegEvent" */;
+			buildPhases = (
+				7EAF082429476D1F0091C027 /* Sources */,
+				7EAF082529476D1F0091C027 /* Frameworks */,
+				7EAF082629476D1F0091C027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegEvent;
+			productName = MegEvent;
+			productReference = 7EAF082829476D1F0091C027 /* MegEvent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EAF083729476D260091C027 /* MegEventTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAF084F29476D260091C027 /* Build configuration list for PBXNativeTarget "MegEventTests" */;
+			buildPhases = (
+				7EAF083429476D260091C027 /* Sources */,
+				7EAF083529476D260091C027 /* Frameworks */,
+				7EAF083629476D260091C027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EAF083A29476D260091C027 /* PBXTargetDependency */,
+			);
+			name = MegEventTests;
+			productName = MegEventTests;
+			productReference = 7EAF083829476D260091C027 /* MegEventTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EAF084129476D260091C027 /* MegEventUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAF085229476D260091C027 /* Build configuration list for PBXNativeTarget "MegEventUITests" */;
+			buildPhases = (
+				7EAF083E29476D260091C027 /* Sources */,
+				7EAF083F29476D260091C027 /* Frameworks */,
+				7EAF084029476D260091C027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EAF084429476D260091C027 /* PBXTargetDependency */,
+			);
+			name = MegEventUITests;
+			productName = MegEventUITests;
+			productReference = 7EAF084229476D260091C027 /* MegEventUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EAF082029476D1F0091C027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7EAF082729476D1F0091C027 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7EAF083729476D260091C027 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7EAF082729476D1F0091C027;
+					};
+					7EAF084129476D260091C027 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7EAF082729476D1F0091C027;
+					};
+				};
+			};
+			buildConfigurationList = 7EAF082329476D1F0091C027 /* Build configuration list for PBXProject "MegEvent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EAF081F29476D1F0091C027;
+			productRefGroup = 7EAF082929476D1F0091C027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EAF082729476D1F0091C027 /* MegEvent */,
+				7EAF083729476D260091C027 /* MegEventTests */,
+				7EAF084129476D260091C027 /* MegEventUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EAF082629476D1F0091C027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF083329476D260091C027 /* Preview Assets.xcassets in Resources */,
+				7EAF083029476D260091C027 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF083629476D260091C027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF084029476D260091C027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EAF082429476D1F0091C027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF082E29476D1F0091C027 /* ContentView.swift in Sources */,
+				7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF083429476D260091C027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF083D29476D260091C027 /* MegEventTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF083E29476D260091C027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF084929476D260091C027 /* MegEventUITestsLaunchTests.swift in Sources */,
+				7EAF084729476D260091C027 /* MegEventUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EAF083A29476D260091C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAF082729476D1F0091C027 /* MegEvent */;
+			targetProxy = 7EAF083929476D260091C027 /* PBXContainerItemProxy */;
+		};
+		7EAF084429476D260091C027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAF082729476D1F0091C027 /* MegEvent */;
+			targetProxy = 7EAF084329476D260091C027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7EAF084A29476D260091C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EAF084B29476D260091C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EAF084D29476D260091C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MegEvent/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEvent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EAF084E29476D260091C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MegEvent/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEvent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EAF085029476D260091C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegEvent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MegEvent";
+			};
+			name = Debug;
+		};
+		7EAF085129476D260091C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MegEvent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MegEvent";
+			};
+			name = Release;
+		};
+		7EAF085329476D260091C027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEventUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MegEvent;
+			};
+			name = Debug;
+		};
+		7EAF085429476D260091C027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.MegEventUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MegEvent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EAF082329476D1F0091C027 /* Build configuration list for PBXProject "MegEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF084A29476D260091C027 /* Debug */,
+				7EAF084B29476D260091C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAF084C29476D260091C027 /* Build configuration list for PBXNativeTarget "MegEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF084D29476D260091C027 /* Debug */,
+				7EAF084E29476D260091C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAF084F29476D260091C027 /* Build configuration list for PBXNativeTarget "MegEventTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF085029476D260091C027 /* Debug */,
+				7EAF085129476D260091C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EAF085229476D260091C027 /* Build configuration list for PBXNativeTarget "MegEventUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF085329476D260091C027 /* Debug */,
+				7EAF085429476D260091C027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EAF082029476D1F0091C027 /* Project object */;
+}
