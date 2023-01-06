@@ -11,7 +11,8 @@ import SwiftUI
 struct MegEventApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentScheduleView()
+            ContentSpeakersView()
         }
     }
 }
