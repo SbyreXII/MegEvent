@@ -162,44 +162,70 @@ class RequestFactory: RequestFactoryProtocol {
         task.resume()
     }
 }
-
-func GetSpeakersFromSchedule(id: String) -> String
-{
-    let requestFactory = RequestFactory()
-    var nom : String = ""
-    var compteur_speakers : Int = 0
-    var taille_speakers : Int = 0
-    //On récupere les informations dans speakers
-    requestFactory.getSpeakersList { (errorHandle, furnituress) in
-        if let _ = errorHandle.errorType, let errorMessage = errorHandle.errorMessage
-        {
+//controller
+View
+let requestFactory = RequestFactory()
+    
+    requestFactory.getScheduleList { (errorHandle, furnitures) in
+    if let _ = errorHandle.errorType, let errorMessage = errorHandle.errorMessage {
             print(errorMessage)
-        }
-        else if let lists = furnituress
-        {
-            taille_speakers = lists.count
-            while (compteur_speakers < taille_speakers)
-            {
-                if (id == lists[compteur_speakers].id)
-                {
-                    //print("     ", lists[compteur_speakers].fields.name)
-                    nom = lists[compteur_speakers].fields.name
-                    compteur_speakers = taille_speakers + 1
-                }
-                else
-                {
-                    compteur_speakers = compteur_speakers + 1
+    }
+    else if let list = furnitures{
+        var compteur_speakers : Int = 0
+        var taille_speakers : Int = 0
+        var compteur_schedule_speakers : Int = 0
+        var taille_schedule_speakers : Int = 0
+        //On récupere les informations dans speakers
+        requestFactory.getSpeakersList { (errorHandle, furnituress) in
+            if let _ = errorHandle.errorType, let errorMessage = errorHandle.errorMessage {
+                print(errorMessage)
+            }
+            else if let lists = furnituress{
+                taille_speakers = lists.count
+                for element in list{
+                    compteur_schedule_speakers = 0
+                    print(element.fields.name)
+                    print(element.fields.type!)
+                    print(element.fields.debut)
+                    print(element.fields.fin)
+                    print(element.fields.location)
+                    if (element.fields.speakers != nil){
+                        print("Presentateur : ")
+                        taille_schedule_speakers = element.fields.speakers!.count
+                        while (compteur_schedule_speakers < taille_schedule_speakers){
+                            while (compteur_speakers < taille_speakers){
+                                if (element.fields.speakers![compteur_schedule_speakers] == lists[compteur_speakers].id){
+                                    print("     ", lists[compteur_speakers].fields.name)
+                                    compteur_speakers = taille_speakers + 1
+                                }
+                                else{
+                                    compteur_speakers = compteur_speakers + 1
+                                }
+                            }
+                            compteur_speakers = 0
+                            compteur_schedule_speakers = compteur_schedule_speakers + 1
+                        }
+                    }
+                    else{
+                        print("Pas de présentateur")
+                    }
+                    if (element.fields.notes != nil){
+                        print(element.fields.notes!)
+                    }
+                    print("\n\n")
                 }
             }
+            else {
+                print("Houston we got a problem")
+            }
         }
-    }
-
-    return nom
-}
-            
-            
-            
         
-
+        
+    }
+    else {
+        print("Houston we got a problem")
+    }
+}
     
+
 

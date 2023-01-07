@@ -17,19 +17,19 @@ struct SpeakerView: View {
             Text(speaker.fields.role)
             Text(speaker.fields.email)
             Text(speaker.fields.phone)
-            if (speaker.fields.viens) {
+            /*if (speaker.fields.viens) {
                 Text("Present")
             }
             else {
                 Text("Absent")
-            }
+            }*/
         }
     }
 }
 
 
 struct ContentSpeakersView: View {
-    @State private var Speakers: [Speakers] = []
+    @State var Speakers: [Speakers] = []
 
     var body: some View {
         List(Speakers, id: \.fields.name) { Speaker in

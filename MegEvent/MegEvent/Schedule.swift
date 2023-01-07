@@ -13,9 +13,14 @@ struct ScheduleView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(schedule.fields.name).font(.title)
+            Text(schedule.fields.type)
             Text(schedule.fields.location)
             Text(schedule.fields.debut)
             Text(schedule.fields.fin)
+            /*ForEach(schedule.fields.speakers!, id: \.self) { item in
+                //Text(GetSpeakersFromSchedule(id: item))
+                Text(item)
+            }*/
             if let notes = schedule.fields.notes {
                 Text(notes)
             }
@@ -23,13 +28,12 @@ struct ScheduleView: View {
     }
 }
 
-
 struct ContentScheduleView: View {
-    @State private var schedules: [Schedule] = []
+    @State var schedules: [Schedule] = []
 
     var body: some View {
         List(schedules, id: \.fields.name) { schedule in
-            ScheduleView(schedule: schedule)
+            ScheduleView(schedule: schedule )
         }
         .onAppear(perform: getSchedules)
     }

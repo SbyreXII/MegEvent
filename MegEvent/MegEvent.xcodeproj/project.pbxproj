@@ -50,6 +50,7 @@
 		ABC4A6A329688B5E0023A143 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		ABC4A6A52968A5B00023A143 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		ABC4A6A72968A5F80023A143 /* Speakers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speakers.swift; sourceTree = "<group>"; };
+		ABED7C83296A202A009F8D03 /* LE CODE DE RASSOUL.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "LE CODE DE RASSOUL.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +104,9 @@
 				7EAF082B29476D1F0091C027 /* MegEventApp.swift */,
 				7EAF082D29476D1F0091C027 /* ContentView.swift */,
 				ABC4A6A52968A5B00023A143 /* Schedule.swift */,
-				ABC4A6A329688B5E0023A143 /* GetData.swift */,
 				ABC4A6A72968A5F80023A143 /* Speakers.swift */,
+				ABC4A6A329688B5E0023A143 /* GetData.swift */,
+				ABED7C83296A202A009F8D03 /* LE CODE DE RASSOUL.playground */,
 				7EAF082F29476D260091C027 /* Assets.xcassets */,
 				7EAF083129476D260091C027 /* Preview Content */,
 			);
