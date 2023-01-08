@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EA32795296B0B0B000D0674 /* ScheduleDayTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA32794296B0B0B000D0674 /* ScheduleDayTwo.swift */; };
 		7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF082B29476D1F0091C027 /* MegEventApp.swift */; };
 		7EAF083029476D260091C027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF082F29476D260091C027 /* Assets.xcassets */; };
 		7EAF083329476D260091C027 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF083229476D260091C027 /* Preview Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7EA32794296B0B0B000D0674 /* ScheduleDayTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDayTwo.swift; sourceTree = "<group>"; };
 		7EAF082829476D1F0091C027 /* MegEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF082B29476D1F0091C027 /* MegEventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventApp.swift; sourceTree = "<group>"; };
 		7EAF082F29476D260091C027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				7EAF082B29476D1F0091C027 /* MegEventApp.swift */,
 				ABC4A6A52968A5B00023A143 /* Schedule.swift */,
+				7EA32794296B0B0B000D0674 /* ScheduleDayTwo.swift */,
 				ABC4A6A72968A5F80023A143 /* Speakers.swift */,
 				ABC4A6A329688B5E0023A143 /* GetData.swift */,
 				ABED7C83296A202A009F8D03 /* LE CODE DE RASSOUL.playground */,
@@ -267,6 +270,7 @@
 			files = (
 				7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */,
 				ABC4A6A429688B5E0023A143 /* GetData.swift in Sources */,
+				7EA32795296B0B0B000D0674 /* ScheduleDayTwo.swift in Sources */,
 				ABC4A6A82968A5F80023A143 /* Speakers.swift in Sources */,
 				ABC4A6A62968A5B00023A143 /* Schedule.swift in Sources */,
 			);

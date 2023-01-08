@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScheduleView: View {
+struct ScheduleDayTwo: View {
     let schedule: Schedule
     var body: some View {
         VStack(alignment: .leading) {
@@ -38,28 +38,18 @@ struct ScheduleView: View {
     }
 }
 
-struct ContentScheduleView: View {
+struct ContentScheduleViewDayTwo: View {
     @State var schedules: [Schedule] = []
-    
     
     var body: some View {
         NavigationView{
-            List(schedules.filter { !$0.fields.debut.contains("-09") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { schedule in
+            List(schedules.filter { !$0.fields.debut.contains("-08") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { schedule in
                 ScheduleView(schedule: schedule )
             }
+            .navigationBarTitle("Schedule of Day Two")
             .onAppear(perform: getSchedules)
-            .navigationBarTitle("Home Page : First Day")
-            .navigationBarItems(trailing:
-            HStack{
-                NavigationLink(destination: ContentSpeakersView()){
-                    Text("Speakers' List")}
-                NavigationLink(destination:ContentScheduleViewDayTwo()){
-                    Text("                                     Day Two")
-                }
             }
-            )
         }
-    }
 
     func getSchedules() {
         let requestFactory = RequestFactory()
@@ -72,7 +62,7 @@ struct ContentScheduleView: View {
     }
 }
 
-struct ContentViewSchedule_Previews: PreviewProvider {
+struct ContentViewSchedule_PreviewsDayTwo: PreviewProvider {
     static var previews: some View {
         Group {
             ContentScheduleView()
