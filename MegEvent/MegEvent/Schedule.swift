@@ -9,33 +9,53 @@ import SwiftUI
 
 struct ScheduleView: View {
     let schedule: Schedule
-
     var body: some View {
         VStack(alignment: .leading) {
-            Text(schedule.fields.name).font(.title)
-            Text(schedule.fields.type)
-            Text(schedule.fields.location)
-            Text(schedule.fields.debut)
-            Text(schedule.fields.fin)
-            /*ForEach(schedule.fields.speakers!, id: \.self) { item in
-                //Text(GetSpeakersFromSchedule(id: item))
-                Text(item)
-            }*/
-            if let notes = schedule.fields.notes {
-                Text(notes)
+            ScrollView{
+                Text(schedule.fields.name).font(.title)
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(height: 2)
+                Text("Type : " + schedule.fields.type)
+                Text("Location : " + schedule.fields.location)
+                let stringDebut = schedule.fields.debut
+                let subStringDebut = stringDebut[stringDebut.index(stringDebut.startIndex, offsetBy: 11)..<stringDebut.index(stringDebut.startIndex, offsetBy: 16)]
+                let stringFin = schedule.fields.fin
+                let subStringFin = stringFin[stringFin.index(stringFin.startIndex, offsetBy: 11)..<stringFin.index(stringFin.startIndex, offsetBy: 16)]
+                Text(subStringDebut + " - " + subStringFin)
+                /*ForEach(schedule.fields.speakers!, id: \.self) { item in
+                    //Text(GetSpeakersFromSchedule(id: item))
+                    Text(item)
+                }*/
+                if let notes = schedule.fields.notes {
+                    Text("\n" + notes)
+                        .font(.custom("Helvetica-LightOblique",size: 14))
+                }
             }
         }
+        .padding()
+        .background(Color.gray)
+        .cornerRadius(10)
     }
 }
 
 struct ContentScheduleView: View {
     @State var schedules: [Schedule] = []
-
+    
     var body: some View {
-        List(schedules, id: \.fields.name) { schedule in
-            ScheduleView(schedule: schedule )
+        NavigationView{
+            List(schedules.filter { !$0.fields.debut.contains("-09") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { schedule in
+                ScheduleView(schedule: schedule )
+            }
+            .onAppear(perform: getSchedules)
+            .navigationBarTitle("Home Page : First Day")
+            .navigationBarItems(trailing:
+            HStack{
+                NavigationLink(destination: ContentSpeakersView()){
+                    Text("GoToSpeakers")
+                }
+            }
+            )
         }
-        .onAppear(perform: getSchedules)
     }
 
     func getSchedules() {
@@ -61,3 +81,5 @@ struct ContentViewSchedule_Previews: PreviewProvider {
         }
     }
 }
+
+

@@ -14,7 +14,7 @@ struct Schedule: Codable {
     let fields: Fields_Schedule
 }
 
-struct Speakers: Codable {
+struct Speakers: Codable {	
     let id: String
     let fields: Fields_Speakers
 }

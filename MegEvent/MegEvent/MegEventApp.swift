@@ -12,7 +12,7 @@ struct MegEventApp: App {
     var body: some Scene {
         WindowGroup {
             ContentScheduleView()
-            ContentSpeakersView()
+            //ContentSpeakersView()
         }
     }
 }

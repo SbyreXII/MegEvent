@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF082B29476D1F0091C027 /* MegEventApp.swift */; };
-		7EAF082E29476D1F0091C027 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF082D29476D1F0091C027 /* ContentView.swift */; };
 		7EAF083029476D260091C027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF082F29476D260091C027 /* Assets.xcassets */; };
 		7EAF083329476D260091C027 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF083229476D260091C027 /* Preview Assets.xcassets */; };
 		7EAF083D29476D260091C027 /* MegEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF083C29476D260091C027 /* MegEventTests.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		7EAF082829476D1F0091C027 /* MegEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF082B29476D1F0091C027 /* MegEventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegEventApp.swift; sourceTree = "<group>"; };
-		7EAF082D29476D1F0091C027 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7EAF082F29476D260091C027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EAF083229476D260091C027 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7EAF083829476D260091C027 /* MegEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MegEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				7EAF082B29476D1F0091C027 /* MegEventApp.swift */,
-				7EAF082D29476D1F0091C027 /* ContentView.swift */,
 				ABC4A6A52968A5B00023A143 /* Schedule.swift */,
 				ABC4A6A72968A5F80023A143 /* Speakers.swift */,
 				ABC4A6A329688B5E0023A143 /* GetData.swift */,
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAF082E29476D1F0091C027 /* ContentView.swift in Sources */,
 				7EAF082C29476D1F0091C027 /* MegEventApp.swift in Sources */,
 				ABC4A6A429688B5E0023A143 /* GetData.swift in Sources */,
 				ABC4A6A82968A5F80023A143 /* Speakers.swift in Sources */,
