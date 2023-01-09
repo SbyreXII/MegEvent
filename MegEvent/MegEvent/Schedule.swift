@@ -32,14 +32,6 @@ struct ScheduleView: View {
                     Text(item)
                 }*/
                 
-                let name = schedule.fields.name as String
-                let notes = schedule.fields.notes
-                let category = schedule.fields.type as String
-                let location = schedule.fields.location as String
-                let time = String(timer)
-                
-                Button(action: {self.showDetailView = true}){Text("\nShow Detail")}
-                    .sheet(isPresented: $showDetailView){DetailView(notes: notes, category: category, location: location, name: name, time: time )}
                 /*if let notes = schedule.fields.notes {
                     Text("\n" + notes)
                         .font(.custom("Helvetica-LightOblique",size: 14))
@@ -60,13 +52,12 @@ struct ContentScheduleView: View {
     
     var body: some View {
         NavigationView{
-            List(schedules.filter { !$0.fields.debut.contains("-09") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { schedule in
-                ScheduleView(schedule: schedule )
-            }
-            .onAppear(perform: getSchedules)
+            List(schedules.filter { !$0.fields.debut.contains("-09") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { item in NavigationLink(destination: DetailView(schedule: item)){
+                ScheduleView(schedule: item )
+            }}
             .navigationBarTitle("Home Page : First Day")
             .navigationBarItems(trailing:
-            HStack{
+                                    HStack{
                 NavigationLink(destination: ContentSpeakersView()){
                     Text("Speakers' List")}
                 NavigationLink(destination:ContentScheduleViewDayTwo()){
@@ -74,7 +65,8 @@ struct ContentScheduleView: View {
                 }
             }
             )
-        }
+            }
+        .onAppear(perform: getSchedules)
     }
 
     func getSchedules() {
