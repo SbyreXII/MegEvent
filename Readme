@@ -9,4 +9,6 @@ Nous avons créé une application Apple avec SwiftUI. Nous récuppérons les don
 
 Pour pouvoir lancé l'application, lancé juste le Build (le bouton "play").
 
+Une fois sur l'application, vous pouvez voir en premier lieu les activités de la 1ere journée, vous aurez accès aux activités de la 2eme journée, ainsi que sur la liste de tous les intervenants. 
+
 Nous n'avons pas réussis à afficher dans les activités les intervennants, mais nous arrivons à les afficher dans la console/le terminal.
