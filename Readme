@@ -11,4 +11,10 @@ Pour pouvoir lancé l'application, lancé juste le Build (le bouton "play").
 
 Une fois sur l'application, vous pouvez voir en premier lieu les activités de la 1ere journée, vous aurez accès aux activités de la 2eme journée, ainsi que sur la liste de tous les intervenants. 
 
-Nous n'avons pas réussis à afficher dans les activités les intervennants, mais nous arrivons à les afficher dans la console/le terminal.
+Nous n'avons pas réussis à afficher dans les activités les intervenants, mais nous arrivons à les afficher dans la console/le terminal.
+
+Problèmes :
+- Lorsqu'on affiche les speakers des schedules, on a rencontré des problèmes lié à getSpeakersFromSchedule() qui est asynchrone.
+On s'est rendu compte que SwiftUI n'aime pas les appels direct à des fonctions asynchrones.
+Du coup on a essayé de passer par des fonctions intermédiaires pour stocker la valeur des speakers mais on obtient une grosse latence et ça affiche le même speaker.
+- L'attribut "viens" (de l'attribut "isConfirmed?" de la table Speakers) qui est un booléen qui pose problème lors de la récupération des données.
