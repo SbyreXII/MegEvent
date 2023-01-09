@@ -163,7 +163,7 @@ class RequestFactory: RequestFactoryProtocol {
     }
 }
 
-func GetSpeakersFromSchedule(id: String) -> String
+/*func GetSpeakersFromSchedule(id: String) -> String
 {
     let requestFactory = RequestFactory()
     var nom : String = ""
@@ -195,6 +195,45 @@ func GetSpeakersFromSchedule(id: String) -> String
     }
 
     return nom
+}*/
+
+var name : String = ""
+
+func getSpeakersFromSchedule(idSpeaker: String) -> Void
+{
+    let requestFactory = RequestFactory()
+    var compteur_speakers : Int = 0
+    var taille_speakers : Int = 0
+
+    //On récupere les informations dans speakers
+    requestFactory.getSpeakersList { (errorHandle, speakers) in
+        if let _  = errorHandle.errorType, let errorMessage = errorHandle.errorMessage
+        {
+            print(errorMessage)
+        }
+        else if let listSpeakers = speakers
+        {
+            taille_speakers = listSpeakers.count
+            while (compteur_speakers < taille_speakers)
+            {
+                if (idSpeaker == listSpeakers[compteur_speakers].id)
+                {
+                    name = listSpeakers[compteur_speakers].fields.name
+                    compteur_speakers = taille_speakers + 1
+                }
+                else
+                {
+                    compteur_speakers = compteur_speakers + 1
+                }
+            }
+        }
+    }
+}
+
+
+func getSpeakerName(idSpeaker: String) -> String{
+    getSpeakersFromSchedule(idSpeaker: idSpeaker)
+    return name
 }
             
             

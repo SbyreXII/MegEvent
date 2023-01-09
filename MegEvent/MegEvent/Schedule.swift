@@ -27,10 +27,15 @@ struct ScheduleView: View {
                 let subStringFin = stringFin[stringFin.index(stringFin.startIndex, offsetBy: 11)..<stringFin.index(stringFin.startIndex, offsetBy: 16)]
                 let timer = subStringDebut + " - " + subStringFin
                 Text(timer)
-                /*ForEach(schedule.fields.speakers!, id: \.self) { item in
-                    //Text(GetSpeakersFromSchedule(id: item))
-                    Text(item)
-                }*/
+                // affiche les speakers des schedules mais on a rencontré des problèmes lié à getSpeakersFromSchedule() qui est asynchrone
+                            // On s'est rendu compte que SwiftUI n'aime pas les appels direct à des fonctions asynchrones
+                            // Du coup on a essayé de passer par des fonctions intermédiaires pour stocker la valeur des
+
+                            /*if let speakers = schedule.fields.speakers {
+                                ForEach(speakers, id: .self) { item in
+                                    Text("Speaker : " + getSpeakerName(idSpeaker: item))
+                                }
+                            }*/
                 
                 /*if let notes = schedule.fields.notes {
                     Text("\n" + notes)
