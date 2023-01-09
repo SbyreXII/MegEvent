@@ -42,12 +42,11 @@ struct ContentScheduleViewDayTwo: View {
     @State var schedules: [Schedule] = []
     
     var body: some View {
-        NavigationView{
             List(schedules.filter { !$0.fields.debut.contains("-08") }.sorted(by: { $0.fields.debut < $1.fields.debut}), id: \.fields.name) { item in NavigationLink(destination: DetailView(schedule: item)){                ScheduleView(schedule: item )
             }}
             .navigationBarTitle("Schedule of Day Two")
             .onAppear(perform: getSchedules)
-            }
+            .background(Color(UIColor.systemBackground))
         }
 
     func getSchedules() {

@@ -39,7 +39,7 @@ struct ScheduleView: View {
             }
         }
         .padding()
-        .background(Color.gray)
+        .background(Color.white)
         .cornerRadius(10)
         .background(Color(UIColor.systemBackground))
         .shadow(radius: 10)

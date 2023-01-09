@@ -32,15 +32,11 @@ struct ContentSpeakersView: View {
     @State var Speakers: [Speakers] = []
 
     var body: some View {
-        NavigationView{
             List(Speakers, id: \.fields.name) { Speaker in
                 SpeakerView(speaker: Speaker)
             }
-            .onAppear(perform: getSpeakers)
-            .navigationBarTitle("Speakers' info")
+            .navigationBarTitle("Speakers' List")            .onAppear(perform: getSpeakers)
         }
-        
-    }
 
     func getSpeakers() {
         let requestFactory = RequestFactory()
