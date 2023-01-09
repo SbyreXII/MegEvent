@@ -36,14 +36,13 @@ struct DetailView: View {
                 .font(.custom("Helvetica-LightOblique",size: 14))
             }
                 
-            Button(action: {self.showDetailView = true}){Text("\nHideDetail")}
+            Button(action: {self.showDetailView = true}){Text("\nHideDetail\n")}
                 .sheet(isPresented: $showDetailView){ContentScheduleView()}
         }
         .cornerRadius(10)
         .background(Color(UIColor.systemBackground))
         .shadow(radius: 10)
         .transition(.slide)
-        
     }
 }
 
