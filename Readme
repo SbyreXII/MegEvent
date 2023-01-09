@@ -1,0 +1,12 @@
+Bonjour,
+
+Nous sommes une équipe de 3 :
+ - SbyreXII = Josselin Renan
+ - bribribru = Brian-Bruce Lo
+ - rass2000 = Rassoul Idja
+ 
+Nous avons créé une application Apple avec SwiftUI. Nous récuppérons les données d'une API pour les afficher de manière ordonnée.
+
+Pour pouvoir lancé l'application, lancé juste le Build (le bouton "play").
+
+Nous n'avons pas réussis à afficher dans les activités les intervennants, mais nous arrivons à les afficher dans la console/le terminal.
